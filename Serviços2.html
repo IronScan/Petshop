@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetShop</title>
+
+  <!-- Importando Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #F9E3BE;
+    }
+
+    .logo {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .logo-img {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .servicos-section {
+      padding: 30px;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+
+    .servicos-img {
+      width: 100%;
+      height: auto;
+    }
+
+    .botao-agendar {
+      background-color: #f4a460;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+    }
+
+    .botao-agendar:hover {
+      background-color: #e9967a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .nav-buttons {
+        margin-top: 20px;
+        text-align: center;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+  
+      .nav-buttons .btn {
+        background-color: #f4a460;
+        color: #fff;
+        border: none;
+        margin: 5px;
+        width: 100px;
+        height: 60px;
+        align-content: center;
+      }
+
+      .nav-buttons .btn:hover {
+        background-color: #e9967a;
+      }
+  </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho com logo centralizado -->
+    <header>
+        <div class="logo">
+          <img src="logo_petshop.jpg" alt="Logo PetShop" class="logo-img">
+        </div>
+      </header>
+   
+    <!-- Navegação com botões -->
+    <div class="container nav-buttons">
+        <a class="btn" href="Index.html">Cliente</a>
+        <a class="btn" href="Cadastro de Pet2.html">Pet</a>
+        <a class="btn" href="Serviços2.html">Serviços</a>
+        <a class="btn" href="Produtos2.html">Produtos</a>
+    </div>
+    
+  
+  <!-- Visualização de Serviços -->
+  <section id="servicos" class="servicos-section">
+    <h2 class="text-center mb-4">Tela de Visualização de Serviços</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="banho.JFIF" alt="Banho" class="servicos-img">
+            <div class="card-body">
+              <p>Serviço disponível das 8h às 18h durante a semana.</p>
+              <p><strong>R$20,00</strong></p>
+              <button class="btn botao-agendar w-100">Agendar serviço</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="tosa.webp" alt="Tosa" class="servicos-img">
+            <div class="card-body">
+              <p>Serviço disponível das 8h às 18h durante a semana.</p>
+              <p><strong>R$20,00</strong></p>
+              <button class="btn botao-agendar w-100">Agendar serviço</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>PetShop © 2024 - Todos os direitos reservados</p>
+    <p>Contato: contato@petshop.com | Telefone: (11) 1234-5678</p>
+  </footer>
+
+  <!-- Importando Bootstrap JS e dependências -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Função JavaScript para lidar com o clique nos botões -->
+  <script>
+    document.querySelectorAll('.botao-agendar').forEach(button => {
+      button.addEventListener('click', function() {
+        alert('Serviço agendado com sucesso!');
+      });
+    });
+  </script>
+
+</body>
+
+</html>
